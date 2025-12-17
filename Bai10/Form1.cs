@@ -15,6 +15,13 @@ namespace Bai10
                      ControlStyles.UserPaint, true);
             UpdateStyles();
         }
+
+        private void InitializeComponent()
+        {
+            this.SuspendLayout();
+            this.ResumeLayout(false);
+
+        }
     }
 
     public class LineSegment
