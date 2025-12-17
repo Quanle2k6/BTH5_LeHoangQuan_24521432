@@ -61,8 +61,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(491, 362);
             this.Controls.Add(this.panel1);
-            this.Name = "ComboBoxTest";
-            this.Text = "Form1";
+            this.Name = "Form1";
+            this.Text = "ComboBoxTest";
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
