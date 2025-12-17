@@ -111,27 +111,5 @@ namespace Bai08
             Point hourEnd = GetHandCoords(hourAngle, handRadius * 0.4, cx, cy);
             g.DrawLine(new Pen(Color.White, 3), cx, cy, hourEnd.X, hourEnd.Y);
         }
-        private void comboBox2_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            ComboBox comboBox = comboBox2;
-            if (comboBox == null) return;
-            if (comboBox.Text == string.Empty)
-            {
-                comboBox2.Text = "14";
-            }
-            if (char.IsControl(e.KeyChar))
-                return;
-            if (char.IsDigit(e.KeyChar))
-                return;
-            if (e.KeyChar == '.')
-            {
-                if (!comboBox.Text.Contains("."))
-                    return;
-                e.Handled = true;
-                return;
-            }
-            e.Handled = true;
-
-        }
     }
 }
